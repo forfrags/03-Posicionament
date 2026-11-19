@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéCard Store | Contacte</title>
+    <link rel="stylesheet" href="global.css">
+</head>
+<body>
+
+<header class="capcalera">
+    <nav class="menu">
+        <a class="logo" href="index.html">POKÉCARD STORE</a>
+
+        <ul>
+            <li>
+                <a href="index.html">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/724.png" alt="">
+                    Inici
+                </a>
+            </li>
+            <li>
+                <a href="productes.html">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/260.png" alt="">
+                    Productes
+                </a>
+            </li>
+            <li>
+                <a class="actiu" href="contacte.html">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/359.png" alt="">
+                    Contacte
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="capitol">
+        <p class="etiqueta">ESTEM A LA TEVA DISPOSICIÓ</p>
+        <h1>Contacta amb nosaltres</h1>
+        <p>Explica'ns què necessites i t'ajudarem.</p>
+    </section>
+
+    <section class="seccio contacte">
+
+        <div class="informacio">
+            <h2>Informació de contacte</h2>
+
+            <p><strong>Adreça:</strong></p>
+            <p>Carrer de la Pokéball, 25</p>
+            <p>Barcelona, Catalunya</p>
+
+            <p><strong>Correu electrònic:</strong></p>
+            <p>info@pokecardstore.cat</p>
+
+            <p><strong>Telèfon:</strong></p>
+            <p>600 123 456</p>
+
+            <h3>Horari d'atenció</h3>
+            <p>Dilluns a divendres: 10:00 - 19:00</p>
+            <p>Dissabtes: 10:00 - 14:00</p>
+
+            <div class="equip-contacte">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/724.png" alt="Decidueye">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/260.png" alt="Swampert">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/359.png" alt="Absol">
+            </div>
+        </div>
+
+        <form class="formulari" action="#" method="post">
+            <h2>Envia'ns un missatge</h2>
+
+            <div class="camp">
+                <label for="nom">Nom complet</label>
+                <input type="text" id="nom" name="nom"
+                       placeholder="Escriu el teu nom" required>
+            </div>
+
+            <div class="camp">
+                <label for="email">Correu electrònic</label>
+                <input type="email" id="email" name="email"
+                       placeholder="exemple@correu.com" required>
+            </div>
+
+            <div class="camp">
+                <label for="assumpte">Assumpte</label>
+                <select id="assumpte" name="assumpte" required>
+                    <option value="">Selecciona una opció</option>
+                    <option value="decidueye">Consulta sobre Decidueye</option>
+                    <option value="swampert">Consulta sobre Swampert</option>
+                    <option value="absol">Consulta sobre Absol</option>
+                    <option value="altres">Altres consultes</option>
+                </select>
+            </div>
+
+            <div class="camp">
+                <label for="missatge">Missatge</label>
+                <textarea id="missatge" name="missatge" rows="5"
+                          placeholder="Escriu el teu missatge..."
+                          required></textarea>
+            </div>
+
+            <button class="boto" type="submit">Enviar missatge</button>
+        </form>
+
+    </section>
+</main>
+
+<footer class="peu">
+    <p>© 2026 PokéCard Store</p>
+    <p>Projecte educatiu de disseny web amb HTML5 i CSS3</p>
+</footer>
+
+</body>
+</html>
