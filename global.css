@@ -1,0 +1,494 @@
+/* CONFIGURACIÓ GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f4f8;
+    color: #202b3c;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* MENÚ SUPERIOR FIX */
+
+.capcalera {
+    background-color: #172c4d;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+    max-width: 1100px;
+    margin: auto;
+    padding: 8px 20px;
+    min-height: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+}
+
+.menu ul a {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu ul a img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    image-rendering: pixelated;
+}
+
+.menu ul a:hover,
+.menu ul a.actiu {
+    color: #f5ca55;
+}
+
+/* CONTINGUT GENERAL */
+
+main {
+    padding-top: 76px;
+}
+
+.seccio {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.capitol {
+    text-align: center;
+    padding: 55px 20px;
+    background-color: #e1e9f5;
+}
+
+.capitol h1 {
+    color: #172c4d;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.etiqueta {
+    color: #b27c16;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* BOTONS */
+
+.boto {
+    display: inline-block;
+    background-color: #e5b83f;
+    color: #172c4d;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boto:hover {
+    background-color: #f3cf69;
+}
+
+.boto-fosc {
+    background-color: #172c4d;
+    color: white;
+}
+
+.boto-fosc:hover {
+    background-color: #294d7d;
+}
+
+/* PÀGINA D'INICI */
+
+.hero {
+    background: linear-gradient(120deg, #172c4d, #31577e);
+    color: white;
+    min-height: 410px;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.hero-contingut {
+    max-width: 470px;
+}
+
+.hero h1 {
+    font-size: 43px;
+    line-height: 1.2;
+    margin: 15px 0;
+}
+
+.hero p {
+    margin-bottom: 22px;
+}
+
+.hero .etiqueta {
+    color: #f5ca55;
+}
+
+.equip-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.equip-hero img {
+    width: 150px;
+    max-width: 30%;
+    object-fit: contain;
+    filter: drop-shadow(0 8px 8px rgba(0, 0, 0, 0.3));
+}
+
+/* EQUIP POKÉMON */
+
+.titol-seccio {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.titol-seccio h2 {
+    color: #172c4d;
+    font-size: 30px;
+}
+
+.equip {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.pokemon {
+    background-color: white;
+    flex: 1;
+    min-width: 230px;
+    max-width: 340px;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+
+.pokemon:hover {
+    transform: translateY(-6px);
+}
+
+.pokemon img {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+}
+
+.pokemon h3 {
+    color: #172c4d;
+    font-size: 23px;
+    margin-top: 10px;
+}
+
+.tipus {
+    color: #a7791b;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 5px 0 12px;
+}
+
+/* FRANJA INFERIOR */
+
+.franja {
+    background-color: #e5b83f;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.franja h2 {
+    color: #172c4d;
+    margin-bottom: 10px;
+}
+
+.franja p {
+    margin-bottom: 20px;
+}
+
+/* PÀGINA DE PRODUCTES */
+
+.productes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.producte {
+    background-color: white;
+    width: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+
+.producte:hover {
+    transform: translateY(-6px);
+}
+
+.producte-imatge {
+    height: 220px;
+    background-color: #e8edf5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.producte-imatge img {
+    width: 190px;
+    height: 190px;
+    object-fit: contain;
+}
+
+.producte-info {
+    padding: 20px;
+}
+
+.producte-info h2 {
+    color: #172c4d;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.preu {
+    color: #b52e3a;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.nota {
+    text-align: center;
+    color: #666;
+    margin-top: 30px;
+    font-size: 13px;
+}
+
+/* PÀGINA DE CONTACTE */
+
+.contacte {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 35px;
+    align-items: start;
+}
+
+.informacio {
+    background-color: #e1e9f5;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.informacio h2,
+.informacio h3 {
+    color: #172c4d;
+    margin-bottom: 15px;
+}
+
+.informacio h3 {
+    margin-top: 25px;
+}
+
+.informacio p {
+    margin-bottom: 8px;
+}
+
+.equip-contacte {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.equip-contacte img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    image-rendering: pixelated;
+}
+
+/* FORMULARI */
+
+.formulari {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.formulari h2 {
+    color: #172c4d;
+    margin-bottom: 20px;
+}
+
+.camp {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.camp label {
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.camp input,
+.camp select,
+.camp textarea {
+    padding: 12px;
+    border: 1px solid #c8ced8;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.camp input:focus,
+.camp select:focus,
+.camp textarea:focus {
+    outline: 2px solid #31577e;
+}
+
+/* PEU DE PÀGINA */
+
+.peu {
+    background-color: #172c4d;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 30px;
+}
+
+.peu p {
+    margin: 5px;
+}
+
+/* DISSENY RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .menu {
+        flex-direction: column;
+        gap: 8px;
+        padding: 10px;
+    }
+
+    .menu ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu ul a {
+        font-size: 13px;
+    }
+
+    .menu ul a img {
+        width: 30px;
+        height: 30px;
+    }
+
+    main {
+        padding-top: 112px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .equip-hero img {
+        width: 115px;
+    }
+
+    .categories {
+        flex-direction: column;
+    }
+
+    .contacte {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .menu ul {
+        gap: 8px;
+    }
+
+    .menu ul a {
+        font-size: 12px;
+    }
+
+    .menu ul a img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .hero h1 {
+        font-size: 29px;
+    }
+
+    .equip-hero img {
+        width: 95px;
+    }
+
+    .capitol h1 {
+        font-size: 28px;
+    }
+
+    .formulari {
+        padding: 20px;
+    }
+}
